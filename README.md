@@ -24,18 +24,17 @@ Since this is a lightweight, frontend-only project, no compilation or local inst
    ```bash
    git clone https://github.com/amandeepintl/GuideToJapan.git
    ```
-2. Open `index.html` directly in your web browser of choice:
-   * **Windows**: Double-click `index.html` or run `Start-Process index.html` in PowerShell.
-   * **macOS/Linux**: Run `open index.html` in your terminal.
+2. Open `JapanTravelRules.html` directly in your web browser of choice:
+   * **Windows**: Double-click `JapanTravelRules.html` or run `Start-Process JapanTravelRules.html` in PowerShell.
+   * **macOS/Linux**: Run `open JapanTravelRules.html` in your terminal.
 
 ## 📁 Repository Structure
 
 ```
 GuideToJapan/
-├── assets/          # Static media and design resources
-├── details-docs/    # Raw source documentation and reference texts
+├── assets/             # Static media and design resources
 ├── js/
-│   └── rules-data.js # Structured JSON-like travel rules database
-├── index.html       # Single-page application template and styling
+│   └── rules-data.js    # Structured JSON-like travel rules database
+├── JapanTravelRules.html # Single-page application template and styling
 └── README.md
 ```
