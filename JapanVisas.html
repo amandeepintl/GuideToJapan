@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statuses of Residence in Japan — Complete Visa Directory</title>
+  <meta name="description" content="An elite, ultra-modern directory of all 29+ Japanese statuses of residence and visas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       PREMIUM "EDITORIAL LUXURY" VARIABLES
+       ============================================================ */
+    :root {
+      /* Colors */
+      --bg-cream: #FDFBF7;
+      --bg-white: #FFFFFF;
+      --text-main: #0A0A0A;
+      --text-muted: rgba(10, 10, 10, 0.5);
+      --sun-red: #D90011;
+      
+      /* Shell/Core Double Bezel */
+      --shell-bg: rgba(0, 0, 0, 0.03);
+      --shell-border: rgba(0, 0, 0, 0.04);
+      --core-border: rgba(0, 0, 0, 0.02);
+      
+      /* Emil's Motion Curves */
+      --ease-out-punch: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out-smooth: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      line-height: 1.5;
+      padding-top: 80px; /* Space for sticky header */
+      /* Premium GPU-accelerated warm dot texture */
+      background-image: radial-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    ::selection { background: var(--sun-red); color: var(--bg-white); }
+
+    /* ============================================================
+       TYPOGRAPHY
+       ============================================================ */
+    .eyebrow {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-weight: 700;
+      color: var(--sun-red);
+      background: rgba(217, 0, 17, 0.05);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .hero-jp {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 900;
+      color: var(--sun-red);
+      opacity: 0.9;
+      display: block;
+      margin-top: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    p.subtitle {
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      color: var(--text-muted);
+      max-width: 500px;
+      margin-bottom: 48px;
+    }
+
+    /* ============================================================
+       LAYOUT & SPACING
+       ============================================================ */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-spacing {
+      padding: 120px 0;
+    }
+
+    /* ============================================================
+       HERO (EDITORIAL SPLIT)
+       ============================================================ */
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1;
+    }
+
+    .sun-circle {
+      width: clamp(250px, 40vw, 500px);
+      height: clamp(250px, 40vw, 500px);
+      background-color: var(--sun-red);
+      border-radius: 50%;
+      position: absolute;
+      transform: scale(0.95);
+      opacity: 0;
+      animation: sunReveal 1.2s var(--ease-out-punch) forwards;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes sunReveal {
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Mobile collapse for hero */
+    @media (max-width: 968px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 120px;
+      }
+      .eyebrow { margin-left: auto; margin-right: auto; }
+      p.subtitle { margin-left: auto; margin-right: auto; }
+      .hero-visual {
+        order: -1;
+        height: 250px;
+      }
+      .sun-circle {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    /* ============================================================
+       INTERACTIVE COMPONENTS (DOUBLE-BEZEL & BUTTONS)
+       ============================================================ */
+    
+    /* Button with nested icon */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--text-main);
+      color: var(--bg-white);
+      padding: 8px 8px 8px 24px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 160ms var(--ease-out-punch), background 200ms ease;
+      will-change: transform;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:active {
+      transform: scale(0.96);
+    }
+
+    .btn-primary:hover {
+      background: #222;
+    }
+
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 250ms var(--ease-out-punch);
+    }
+
+    .btn-primary:hover .btn-icon {
+      transform: translateX(2px) scale(1.05);
+    }
+
+    /* Search Input (Double-Bezel) */
+    .search-wrapper {
+      position: sticky;
+      top: 104px; /* Offset for navigation bar */
+      z-index: 100;
+      max-width: 600px;
+      margin: 0 auto 60px;
+      /* Outer Shell */
+      background: rgba(253, 251, 247, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 8px;
+      border-radius: 9999px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+      border: 1px solid var(--shell-border);
+    }
+
+    .search-core {
+      position: relative;
+      background: var(--bg-white);
+      border-radius: 9999px;
+      border: 1px solid var(--core-border);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.02);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .search-core input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 16px 0;
+      font-size: 1.05rem;
+      font-family: inherit;
+      color: var(--text-main);
+      outline: none;
+    }
+
+    .search-core input::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* Controls */
+    .controls-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    /* Category Filter Pills */
+    .filter-scroll {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+      cursor: grab;
+      user-select: none;
+    }
+    .filter-scroll:active { cursor: grabbing; }
+    .filter-scroll::-webkit-scrollbar { display: none; }
+
+    .filter-pill {
+      white-space: nowrap;
+      padding: 9px 18px;
+      background: var(--bg-white);
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 9999px;
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 180ms ease;
+      font-family: inherit;
+    }
+    .filter-pill:hover { border-color: rgba(0,0,0,0.2); color: #111; }
+    .filter-pill:active { transform: scale(0.95); }
+    .filter-pill.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    /* Sort Pill Row */
+    .sort-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .sort-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+    .sort-pill {
+      padding: 7px 14px;
+      background: var(--bg-white);
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #666;
+      cursor: pointer;
+      transition: all 180ms ease;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .sort-pill:hover { border-color: rgba(0,0,0,0.22); color: #111; }
+    .sort-pill.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    /* ============================================================
+       GRID & CARDS
+       ============================================================ */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-auto-rows: 315px;
+      gap: 16px;
+      min-height: 60vh;
+    }
+
+    .rule-card-shell {
+      background: transparent;
+      border: none;
+      padding: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      perspective: 1200px;
+      position: relative;
+      height: 100%;
+      will-change: transform;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .rule-card-shell:hover { transform: translateY(-3px); }
+    }
+    .rule-card-shell:active { transform: scale(0.97); }
+
+    /* 3D flip wrap */
+    .card-3d-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    /* Backdrop — simple rgba, NO blur (blur kills performance) */
+    .backdrop {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(245, 244, 240, 0.92);
+      z-index: 900;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.22s ease;
+    }
+    .backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Expanded clone card — floats to center */
+    .clone-card {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      max-width: 460px;
+      height: 60vh;
+      max-height: 520px;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      background: transparent;
+      border: none;
+      padding: 0;
+      will-change: transform, opacity;
+    }
+    .clone-card .card-3d-wrap {
+      transform: rotateY(0deg) scale(0.92);
+      transition: transform 0.38s cubic-bezier(0.34, 1.3, 0.64, 1);
+      will-change: transform;
+    }
+    .clone-card.is-expanded {
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 0.18s ease;
+    }
+    .clone-card.is-expanded .card-3d-wrap {
+      transform: rotateY(180deg) scale(1);
+    }
+    .clone-card .card-back { overflow: hidden; }
+
+    /* Card surfaces (Double-Bezel Luxury Design) */
+    .card-front, .card-back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      background: rgba(253, 251, 247, 0.6);
+      border: 1px solid var(--shell-border);
+      border-radius: 24px;
+      padding: 30px 28px 26px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      transition: transform 300ms var(--ease-out-punch);
+      will-change: transform, opacity;
+    }
+    .card-front::before, .card-back::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid var(--core-border);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.01);
+      z-index: 1;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+    }
+    .card-back::before {
+      background: #fafaf8;
+    }
+
+    /* Ensure card contents layer properly above the inner white core */
+    .card-icon, 
+    .card-title, 
+    .card-preview, 
+    .card-badge-wrap, 
+    .card-badge, 
+    .card-flip-hint,
+    .card-back-title,
+    .card-back-scroll,
+    .card-close-hint {
+      position: relative;
+      z-index: 2;
+    }
+    .card-dot {
+      z-index: 3;
+    }
+    .card-back-scroll {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; /* smooth momentum scrolling on iOS */
+      padding-right: 6px;
+      margin-bottom: 8px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+    }
+    .card-back-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+    .card-back-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .card-back-scroll::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 99px;
+    }
+    .card-back-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    /* Severity/Work dot */
+    .card-dot {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+    .dot-critical { background: #E53935; box-shadow: 0 0 0 3px rgba(229,57,53,0.15); }
+    .dot-important { background: #F59E0B; box-shadow: 0 0 0 3px rgba(245,158,11,0.15); }
+    .dot-normal   { background: #4CAF50; box-shadow: 0 0 0 3px rgba(76,175,80,0.15); }
+
+    /* Card content */
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    .card-preview {
+      font-size: 0.88rem;
+      color: #888;
+      line-height: 1.55;
+      flex: 1;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .card-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 12px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+    .badge-critical  { background: rgba(229,57,53,0.1);  color: #C62828; border: 1px solid rgba(229,57,53,0.25); }
+    .badge-important { background: rgba(245,158,11,0.1); color: #B45309; border: 1px solid rgba(245,158,11,0.25); }
+    .badge-normal    { background: rgba(76,175,80,0.1);  color: #2E7D32; border: 1px solid rgba(76,175,80,0.25); }
+
+    .card-flip-hint {
+      margin-top: 14px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Back of card */
+    .card-back-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+    .card-back-desc {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.7;
+      flex: 1;
+    }
+    .card-close-hint {
+      margin-top: 16px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    /* Summary Table styling */
+    .summary-section {
+      background: var(--bg-white);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+      border: 1px solid var(--shell-border);
+      margin-top: 80px;
+    }
+    .summary-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+    .summary-table-wrapper {
+      overflow-x: auto;
+    }
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .summary-table th, .summary-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      font-size: 0.95rem;
+    }
+    .summary-table th {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: #999;
+    }
+    .summary-table td strong {
+      color: var(--sun-red);
+    }
+
+    /* ============================================================
+       NAVIGATION HEADER
+       ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(253, 251, 247, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--shell-border);
+    }
+
+    .header-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      color: var(--text-main);
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-circle {
+      width: 12px;
+      height: 12px;
+      background: var(--sun-red);
+      border-radius: 50%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 180ms ease;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--sun-red);
+      border-radius: 99px;
+    }
+
+    @media (max-width: 600px) {
+      .header-container {
+        padding: 14px 16px;
+      }
+      .nav-links {
+        gap: 16px;
+      }
+      .nav-link {
+        font-size: 0.85rem;
+      }
+    }
+    /* Premium Hover Red Outline Overlay */
+    .card-front::after,
+    .card-back::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 3px solid var(--sun-red);
+      border-radius: inherit; /* respects card's rounded corners */
+      opacity: 0;
+      transition: opacity 250ms var(--ease-out-punch);
+      pointer-events: none;
+      z-index: 10;
+    }
+    
+    .rule-card-shell:hover .card-front::after,
+    .rule-card-shell:hover .card-back::after {
+      opacity: 1;
+    }
+
+    /* Hide outline inside the active expanded clone card */
+    .clone-card .card-front::after,
+    .clone-card .card-back::after {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED NAVIGATION HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-circle"></span>
+        <span class="logo-text">GuideToJapan</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="JapanVisas.html" class="nav-link active">Visas</a>
+        <a href="JapanTravelRules.html" class="nav-link">Travel Rules</a>
+        <a href="AfterLanding.html" class="nav-link">After Landing</a>
+        <a href="Roadmap.html" class="nav-link">Roadmap</a>
+        <a href="JapanGuide.html" class="nav-link">Japan Guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow">GuideToJapan</div>
+        <h1>Japan Residence<br>Visas<span class="hero-jp">在留資格・ビザ一覧</span></h1>
+        <p class="subtitle">A complete breakdown of all 29+ statuses of residence in Japan. Learn requirements, durations, and paths to settlement.</p>
+        <a href="#directory" class="btn-primary">
+          Explore Directory
+          <div class="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="sun-circle"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTORY SECTION -->
+  <section id="directory" class="section-spacing container">
+    
+    <!-- Double-Bezel Search -->
+    <div class="search-wrapper">
+      <div class="search-core">
+        <input type="text" id="searchInput" placeholder="Search visas, rights, or keywords...">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(10,10,10,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </div>
+    </div>
+
+
+
+    <!-- Bento Grid -->
+    <div class="bento-grid" id="visasGrid"></div>
+
+    <!-- Quick Summary Section -->
+    <div class="summary-section">
+      <h2 class="summary-title">Quick Visa Selection by Goal</h2>
+      <div class="summary-table-wrapper">
+        <table class="summary-table">
+          <thead>
+            <tr>
+              <th>Your Goal in Japan</th>
+              <th>Status of Residence / Visa to Acquire</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Just visiting / holiday / business meeting</td>
+              <td><strong>Temporary Visitor</strong></td>
+            </tr>
+            <tr>
+              <td>Learning Japanese or traditional arts</td>
+              <td><strong>Student / Cultural Activities</strong></td>
+            </tr>
+            <tr>
+              <td>IT / Engineering / Marketing / Corporate office job</td>
+              <td><strong>Engineer / Specialist in Humanities / International Services (EHI)</strong> or <strong>Highly Skilled Professional (HSP)</strong></td>
+            </tr>
+            <tr>
+              <td>Trade / Blue-collar jobs (Agriculture, Construction, Hospitality)</td>
+              <td><strong>Specified Skilled Worker (SSW) Type 1 or 2</strong></td>
+            </tr>
+            <tr>
+              <td>Starting a company or investing in Japan</td>
+              <td><strong>Business Manager</strong></td>
+            </tr>
+            <tr>
+              <td>Married to or child of a Japanese citizen</td>
+              <td><strong>Spouse / Child of Japanese National</strong></td>
+            </tr>
+            <tr>
+              <td>Working remotely as a nomad</td>
+              <td><strong>Digital Nomad (Designated Activities)</strong></td>
+            </tr>
+            <tr>
+              <td>Settling down permanently in Japan</td>
+              <td><strong>Permanent Resident (PR)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="backdrop" id="overlayBackdrop"></div>
+
+  <!-- External Data -->
+  <script src="js/visas-data.js?v=1"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('visasGrid');
+      const searchInput = document.getElementById('searchInput');
+
+      // Instantly closes any open details card (used on search, filter, or sort)
+      function closeOpenCardInstantly() {
+        const clone = document.querySelector('.clone-card');
+        if (clone) {
+          document.querySelectorAll('.rule-card-shell').forEach(c => {
+            c.style.opacity = '1';
+            c.style.pointerEvents = 'auto';
+          });
+          document.getElementById('overlayBackdrop').classList.remove('active');
+          clone.remove();
+        }
+      }
+
+      // Search
+      searchInput.addEventListener('input', () => {
+        closeOpenCardInstantly();
+        renderVisas();
+      });
+
+      // Helper to format basic markdown bold tags
+      function formatDescription(text) {
+        if (!text) return '';
+        return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      }
+
+      // 2. Render Cards
+      function renderVisas() {
+        const query = searchInput.value.toLowerCase();
+        grid.innerHTML = '';
+
+        let filtered = VISAS.filter(visa => {
+          const desc = visa.description || '';
+          const purpose = visa.purpose || '';
+          const matchSearch = visa.title.toLowerCase().includes(query) || 
+                              desc.toLowerCase().includes(query) ||
+                              purpose.toLowerCase().includes(query);
+          return matchSearch;
+        });
+
+        // Default sort by popularity
+        filtered.sort((a, b) => b.popularity - a.popularity);
+
+        if (filtered.length === 0) {
+          grid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 1.1rem;">No visas found matching your search.</div>';
+          return;
+        }
+
+        filtered.forEach((visa) => {
+          // Determine status color class based on work rights
+          let tagColorClass = 'normal'; // green = work allowed
+          if (visa.work_allowed === 'Prohibited') {
+            tagColorClass = 'critical'; // red = no work
+          } else if (visa.work_allowed.includes('Up to')) {
+            tagColorClass = 'important'; // yellow = limited work
+          }
+          
+          // Get category emoji
+          const cat = VISA_CATEGORIES.find(c => c.id === visa.category);
+          const icon = cat ? cat.emoji : '';
+
+          // Truncate purpose for preview
+          const shortDesc = visa.purpose.length > 90 ? visa.purpose.substring(0, 90) + '…' : visa.purpose;
+
+          const cardHTML = `
+            <div class="rule-card-shell" onclick="toggleCardFlip(this)">
+              <div class="card-3d-wrap">
+                <!-- FRONT -->
+                <div class="card-front">
+                  <div class="card-dot dot-${tagColorClass}"></div>
+                  <div class="card-icon">${icon}</div>
+                  <h3 class="card-title">${visa.title}</h3>
+                  <p class="card-preview">${shortDesc}</p>
+                  <div class="card-badge-wrap" style="margin-top: 12px; display: flex; flex-direction: column; gap: 4px; align-self: flex-start;">
+                    <span style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #aaa;">Work Rights</span>
+                    <span class="card-badge badge-${tagColorClass}" style="margin-top: 0;">${visa.work_allowed.toUpperCase()}</span>
+                  </div>
+                  <div class="card-flip-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                    Tap to Flip
+                  </div>
+                </div>
+                <!-- BACK -->
+                <div class="card-back">
+                  <div class="card-dot dot-${tagColorClass}"></div>
+                  <p class="card-back-title">${visa.title}</p>
+                  <div class="card-back-scroll">
+                    <div class="card-back-desc">
+                      <p style="margin-bottom: 8px; font-size: 0.88rem; font-weight: 700; color: #111;">
+                        ⏱️ Duration: <span style="font-weight: 500; color: #222;">${visa.duration}</span>
+                      </p>
+                      <p style="margin-bottom: 8px; font-size: 0.88rem; font-weight: 700; color: #111;">
+                        💼 Work Rights: <span style="font-weight: 500; color: #222;">${visa.work_allowed}</span>
+                      </p>
+                      <p style="margin-bottom: 12px; font-size: 0.88rem; font-weight: 700; color: #111;">
+                        ♾️ Path to PR: <span style="font-weight: 500; color: #222;">${visa.path_to_pr ? 'Yes (Counts/leads to PR)' : 'No direct path'}</span>
+                      </p>
+                      <p style="border-top: 1px solid rgba(0,0,0,0.06); padding-top: 10px; font-size: 0.86rem; color: #1a1a1a; font-weight: 500; line-height: 1.6; white-space: pre-line; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;">${formatDescription(visa.description)}</p>
+                    </div>
+                  </div>
+                  <div class="card-close-hint" style="margin-top: 0;">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                    Tap to Close
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          grid.insertAdjacentHTML('beforeend', cardHTML);
+        });
+      }
+
+      // Original modal-expand flip using FLIP technique (First, Last, Invert, Play)
+      window.toggleCardFlip = function(card) {
+        // Only one clone at a time
+        if (document.querySelector('.clone-card')) return;
+
+        // 1. First: Get initial state of the card
+        const rect = card.getBoundingClientRect();
+
+        // 2. Clone the card and prepare it
+        const clone = card.cloneNode(true);
+        clone.classList.add('clone-card');
+        clone.onclick = null;
+        
+        // Remove standard hover scale transitions from the clone to prevent visual glitching
+        clone.style.transition = 'none';
+        
+        document.body.appendChild(clone);
+
+        // 3. Last: Get the centered layout position of the clone (since it is top/left: 50% with translate(-50%, -50%))
+        const cloneRect = clone.getBoundingClientRect();
+
+        // Calculate delta translation and scale between the centered clone and the original grid card
+        const cloneCenterX = cloneRect.left + cloneRect.width / 2;
+        const cloneCenterY = cloneRect.top + cloneRect.height / 2;
+        const cardCenterX = rect.left + rect.width / 2;
+        const cardCenterY = rect.top + rect.height / 2;
+
+        const deltaX = cardCenterX - cloneCenterX;
+        const deltaY = cardCenterY - cloneCenterY;
+        const scaleX = rect.width / cloneRect.width;
+        const scaleY = rect.height / cloneRect.height;
+
+        // 4. Invert: Apply transform to map the clone exactly over the original card
+        clone.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(${scaleX}, ${scaleY})`;
+        
+        // Hide the original card to create a seamless lift effect
+        card.style.opacity = '0';
+        card.style.pointerEvents = 'none';
+
+        const backdrop = document.getElementById('overlayBackdrop');
+        backdrop.classList.add('active');
+
+        // Force a layout reflow so the browser registers the invert state
+        clone.offsetHeight;
+
+        // 5. Play: Transition to the centered expanded state and flip the inner card
+        requestAnimationFrame(() => {
+          clone.style.transition = 'transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.45s ease';
+          clone.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+          clone.classList.add('is-expanded');
+        });
+
+        // Close logic
+        let canClose = false;
+        // Wait for the flip animation to finish before allowing closures
+        setTimeout(() => { canClose = true; }, 450);
+
+        function closeClone() {
+          if (!canClose) return;
+          canClose = false;
+
+          // Remove the backdrop listener so it doesn't linger
+          backdrop.removeEventListener('click', closeClone);
+
+          // Re-calculate delta in case of scrolling or viewport resizing
+          const latestRect = card.getBoundingClientRect();
+          const latestCardCenterX = latestRect.left + latestRect.width / 2;
+          const latestCardCenterY = latestRect.top + latestRect.height / 2;
+          const latestDeltaX = latestCardCenterX - cloneCenterX;
+          const latestDeltaY = latestCardCenterY - cloneCenterY;
+          const latestScaleX = latestRect.width / cloneRect.width;
+          const latestScaleY = latestRect.height / cloneRect.height;
+
+          // Animate clone back to the original card slot
+          clone.style.transform = `translate3d(calc(-50% + ${latestDeltaX}px), calc(-50% + ${latestDeltaY}px), 0) scale(${latestScaleX}, ${latestScaleY})`;
+          clone.classList.remove('is-expanded');
+          backdrop.classList.remove('active');
+
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.pointerEvents = 'auto';
+            clone.remove();
+          }, 450);
+        }
+
+        // Close on backdrop click (no 'once: true' so it doesn't get consumed if clicked prematurely)
+        backdrop.addEventListener('click', closeClone);
+        
+        // Close when clicking the close button on the back face
+        const closeHint = clone.querySelector('.card-close-hint');
+        if (closeHint) {
+          closeHint.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeClone();
+          });
+        }
+        
+        // Also close when clicking the back card surface itself
+        const cardBack = clone.querySelector('.card-back');
+        if (cardBack) {
+          cardBack.addEventListener('click', (e) => {
+            closeClone();
+          });
+        }
+      };
+
+      // Initial Render
+      renderVisas();
+
+      // Debounced re-render on resize
+      window.addEventListener('resize', () => {
+        clearTimeout(window.resizeTimer);
+        window.resizeTimer = setTimeout(renderVisas, 250);
+      });
+    });
+  </script>
+</body>
+</html>
