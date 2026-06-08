@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After Landing Relocation Guide to Japan — GuideToJapan</title>
+  <meta name="description" content="An elite, ultra-modern relocation guide covering ward office registration, health insurance, bank accounts, apartment rental, and daily life in Japan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       PREMIUM "EDITORIAL LUXURY" VARIABLES
+       ============================================================ */
+    :root {
+      /* Colors */
+      --bg-cream: #FDFBF7;
+      --bg-white: #FFFFFF;
+      --text-main: #0A0A0A;
+      --text-muted: rgba(10, 10, 10, 0.5);
+      --sun-red: #D90011;
+      
+      /* Shell/Core Double Bezel */
+      --shell-bg: rgba(0, 0, 0, 0.03);
+      --shell-border: rgba(0, 0, 0, 0.04);
+      --core-border: rgba(0, 0, 0, 0.02);
+      
+      /* Emil's Motion Curves */
+      --ease-out-punch: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out-smooth: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      line-height: 1.5;
+      padding-top: 80px; /* Space for sticky header */
+      /* Premium GPU-accelerated warm dot texture */
+      background-image: radial-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    ::selection { background: var(--sun-red); color: var(--bg-white); }
+
+    /* ============================================================
+       NAVIGATION HEADER
+       ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(253, 251, 247, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--shell-border);
+      transition: background 0.3s ease;
+    }
+
+    .header-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      color: var(--text-main);
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-circle {
+      width: 12px;
+      height: 12px;
+      background: var(--sun-red);
+      border-radius: 50%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 180ms ease;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--sun-red);
+      border-radius: 99px;
+    }
+
+    @media (max-width: 600px) {
+      .header-container {
+        padding: 14px 16px;
+      }
+      .nav-links {
+        gap: 16px;
+      }
+      .nav-link {
+        font-size: 0.85rem;
+      }
+    }
+
+    /* ============================================================
+       TYPOGRAPHY
+       ============================================================ */
+    .eyebrow {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-weight: 700;
+      color: var(--sun-red);
+      background: rgba(217, 0, 17, 0.05);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7.5vw, 6rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .hero-jp {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 900;
+      color: var(--sun-red);
+      opacity: 0.9;
+      display: block;
+      margin-top: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    p.subtitle {
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      color: var(--text-muted);
+      max-width: 500px;
+      margin-bottom: 48px;
+    }
+
+    /* ============================================================
+       LAYOUT & SPACING
+       ============================================================ */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-spacing {
+      padding: 80px 0 120px 0;
+    }
+
+    /* ============================================================
+       HERO (EDITORIAL SPLIT)
+       ============================================================ */
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1;
+    }
+
+    .sun-circle {
+      width: clamp(250px, 38vw, 480px);
+      height: clamp(250px, 38vw, 480px);
+      background-color: var(--sun-red);
+      border-radius: 50%;
+      position: absolute;
+      transform: scale(0.95);
+      opacity: 0;
+      animation: sunReveal 1.2s var(--ease-out-punch) forwards;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes sunReveal {
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Mobile collapse for hero */
+    @media (max-width: 968px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 60px;
+      }
+      .eyebrow { margin-left: auto; margin-right: auto; }
+      p.subtitle { margin-left: auto; margin-right: auto; }
+      .hero-visual {
+        order: -1;
+        height: 220px;
+      }
+      .sun-circle {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    /* ============================================================
+       INTERACTIVE COMPONENTS (DOUBLE-BEZEL & BUTTONS)
+       ============================================================ */
+    
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--text-main);
+      color: var(--bg-white);
+      padding: 8px 8px 8px 24px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 160ms var(--ease-out-punch), background 200ms ease;
+      will-change: transform;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:active {
+      transform: scale(0.96);
+    }
+
+    .btn-primary:hover {
+      background: #222;
+    }
+
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 250ms var(--ease-out-punch);
+    }
+
+    .btn-primary:hover .btn-icon {
+      transform: translateX(2px) scale(1.05);
+    }
+
+    /* Search Input (Double-Bezel) */
+    .search-wrapper {
+      position: sticky;
+      top: 104px; /* Adjust for navigation bar */
+      z-index: 100;
+      max-width: 600px;
+      margin: 0 auto 60px;
+      background: rgba(253, 251, 247, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 8px;
+      border-radius: 9999px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+      border: 1px solid var(--shell-border);
+    }
+
+    .search-core {
+      position: relative;
+      background: var(--bg-white);
+      border-radius: 9999px;
+      border: 1px solid var(--core-border);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.02);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .search-core input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 16px 0;
+      font-size: 1.05rem;
+      font-family: inherit;
+      color: var(--text-main);
+      outline: none;
+    }
+
+    .search-core input::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* Controls */
+    .controls-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    /* Category Filter Pills */
+    .filter-scroll {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+      cursor: grab;
+      user-select: none;
+    }
+    .filter-scroll:active { cursor: grabbing; }
+    .filter-scroll::-webkit-scrollbar { display: none; }
+
+    .filter-pill {
+      white-space: nowrap;
+      padding: 9px 18px;
+      background: var(--bg-white);
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 9999px;
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 180ms ease;
+      font-family: inherit;
+    }
+    .filter-pill:hover { border-color: rgba(0,0,0,0.2); color: #111; }
+    .filter-pill:active { transform: scale(0.95); }
+    .filter-pill.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    /* Sort Pill Row */
+    .sort-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .sort-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+    .sort-pill {
+      padding: 7px 14px;
+      background: var(--bg-white);
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #666;
+      cursor: pointer;
+      transition: all 180ms ease;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .sort-pill:hover { border-color: rgba(0,0,0,0.22); color: #111; }
+    .sort-pill.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    /* ============================================================
+       GRID & CARDS
+       ============================================================ */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-auto-rows: 315px;
+      gap: 16px;
+      min-height: 60vh;
+    }
+
+    .rule-card-shell {
+      background: transparent;
+      border: none;
+      padding: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      perspective: 1200px;
+      position: relative;
+      height: 100%;
+      will-change: transform;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .rule-card-shell:hover { transform: translateY(-3px); }
+    }
+    .rule-card-shell:active { transform: scale(0.97); }
+
+    /* 3D flip wrap */
+    .card-3d-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    /* Backdrop — simple rgba, NO blur (blur kills performance) */
+    .backdrop {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(245, 244, 240, 0.92);
+      z-index: 900;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.22s ease;
+    }
+    .backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Expanded clone card — floats to center */
+    .clone-card {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      max-width: 460px;
+      height: 60vh;
+      max-height: 520px;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      background: transparent;
+      border: none;
+      padding: 0;
+      will-change: transform, opacity;
+    }
+    .clone-card .card-3d-wrap {
+      transform: rotateY(0deg) scale(0.92);
+      transition: transform 0.38s cubic-bezier(0.34, 1.3, 0.64, 1);
+      will-change: transform;
+    }
+    .clone-card.is-expanded {
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 0.18s ease;
+    }
+    .clone-card.is-expanded .card-3d-wrap {
+      transform: rotateY(180deg) scale(1);
+    }
+    .clone-card .card-back { overflow: hidden; }
+
+    /* Card surfaces (Double-Bezel Luxury Design) */
+    .card-front, .card-back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      background: rgba(253, 251, 247, 0.6);
+      border: 1px solid var(--shell-border);
+      border-radius: 24px;
+      padding: 30px 28px 26px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      transition: transform 300ms var(--ease-out-punch);
+      will-change: transform, opacity;
+    }
+    .card-front::before, .card-back::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid var(--core-border);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.01);
+      z-index: 1;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+    }
+    .card-back::before {
+      background: #fafaf8;
+    }
+
+    /* Ensure card contents layer properly above the inner white core */
+    .card-icon, 
+    .card-title, 
+    .card-preview, 
+    .card-badge-wrap, 
+    .card-badge, 
+    .card-flip-hint,
+    .card-back-title,
+    .card-back-scroll,
+    .card-close-hint {
+      position: relative;
+      z-index: 2;
+    }
+    .card-dot {
+      z-index: 3;
+    }
+    .card-back-scroll {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; /* smooth momentum scrolling on iOS */
+      padding-right: 6px;
+      margin-bottom: 8px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+    }
+    .card-back-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+    .card-back-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .card-back-scroll::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 99px;
+    }
+    .card-back-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    /* Severity dot */
+    .card-dot {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+    .dot-critical  { background: #E53935; box-shadow: 0 0 0 3px rgba(229,57,53,0.15); }
+    .dot-important { background: #F59E0B; box-shadow: 0 0 0 3px rgba(245,158,11,0.15); }
+    .dot-normal    { background: #4CAF50; box-shadow: 0 0 0 3px rgba(76,175,80,0.15); }
+
+    /* Card content */
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    .card-preview {
+      font-size: 0.88rem;
+      color: #888;
+      line-height: 1.55;
+      flex: 1;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .card-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 12px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+    .badge-critical  { background: rgba(229,57,53,0.1);  color: #C62828; border: 1px solid rgba(229,57,53,0.25); }
+    .badge-important { background: rgba(245,158,11,0.1); color: #B45309; border: 1px solid rgba(245,158,11,0.25); }
+    .badge-normal    { background: rgba(76,175,80,0.1);  color: #2E7D32; border: 1px solid rgba(76,175,80,0.25); }
+
+    .card-flip-hint {
+      margin-top: 14px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Back of card */
+    .card-back-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+    .card-back-desc {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.7;
+      flex: 1;
+    }
+    .card-close-hint {
+      margin-top: 16px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    /* Premium Corner Brackets */
+    .corner-border {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 0 solid var(--sun-red);
+      opacity: 0;
+      transition: all 300ms var(--ease-out-punch);
+      pointer-events: none;
+      z-index: 5;
+    }
+    .corner-tl {
+      top: 12px;
+      left: 12px;
+      border-top-width: 3px;
+      border-left-width: 3px;
+      border-top-left-radius: 6px;
+      transform: translate(-6px, -6px);
+    }
+    .corner-tr {
+      top: 12px;
+      right: 12px;
+      border-top-width: 3px;
+      border-right-width: 3px;
+      border-top-right-radius: 6px;
+      transform: translate(6px, -6px);
+    }
+    .corner-bl {
+      bottom: 12px;
+      left: 12px;
+      border-bottom-width: 3px;
+      border-left-width: 3px;
+      border-bottom-left-radius: 6px;
+      transform: translate(-6px, 6px);
+    }
+    .corner-br {
+      bottom: 12px;
+      right: 12px;
+      border-bottom-width: 3px;
+      border-right-width: 3px;
+      border-bottom-right-radius: 6px;
+      transform: translate(6px, 6px);
+    }
+
+    /* Hover & In-View Activation */
+    .rule-card-shell:hover .corner-border,
+    .rule-card-shell.in-view .corner-border,
+    .card-front:hover .corner-border,
+    .card-front.in-view .corner-border,
+    .card-back:hover .corner-border,
+    .card-back.in-view .corner-border {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    /* Hide corner brackets inside the active expanded clone card */
+    .clone-card .corner-border {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED NAVIGATION HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-circle"></span>
+        <span class="logo-text">GuideToJapan</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="JapanVisas.html" class="nav-link">Visas</a>
+        <a href="JapanTravelRules.html" class="nav-link">Travel Rules</a>
+        <a href="AfterLanding.html" class="nav-link active">After Landing</a>
+        <a href="Roadmap.html" class="nav-link">Roadmap</a>
+        <a href="JapanGuide.html" class="nav-link">Japan Guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow">After Landing</div>
+        <h1>After Landing<br>in Japan<span class="hero-jp">移住と日本での生活</span></h1>
+        <p class="subtitle">A comprehensive roadmap to settling down in Japan. Master ward offices, bank accounts, healthcare, utilities, and community customs.</p>
+        <a href="#directory" class="btn-primary">
+          Explore After Landing Steps
+          <div class="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="sun-circle"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTORY SECTION -->
+  <section id="directory" class="section-spacing container">
+    
+    <!-- Double-Bezel Search -->
+    <div class="search-wrapper">
+      <div class="search-core">
+        <input type="text" id="searchInput" placeholder="Search registration, health, banking, setup...">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(10,10,10,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </div>
+    </div>
+
+
+
+    <!-- Bento Grid -->
+    <div class="bento-grid" id="livingGrid"></div>
+
+  </section>
+
+  <div class="backdrop" id="overlayBackdrop"></div>
+
+  <!-- External Data -->
+  <script src="js/living-data.js?v=1"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      const grid = document.getElementById('livingGrid');
+      const searchInput = document.getElementById('searchInput');
+
+
+
+
+      // Instantly closes any open details card (used on search, filter, or sort)
+      function closeOpenCardInstantly() {
+        const clone = document.querySelector('.clone-card');
+        if (clone) {
+          document.querySelectorAll('.rule-card-shell').forEach(c => {
+            c.style.opacity = '1';
+            c.style.pointerEvents = 'auto';
+          });
+          document.getElementById('overlayBackdrop').classList.remove('active');
+          clone.remove();
+        }
+      }
+
+      // Search
+      searchInput.addEventListener('input', () => {
+        closeOpenCardInstantly();
+        renderLivingGuides();
+      });
+
+      // Helper to format basic markdown bold tags
+      function formatDescription(text) {
+        if (!text) return '';
+        return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      }
+
+      // 2. Render Cards
+      function renderLivingGuides() {
+        const query = searchInput.value.toLowerCase();
+        grid.innerHTML = '';
+
+        let filtered = LIVING_GUIDES.filter(item => {
+          const desc = item.description || '';
+          const purpose = item.purpose || '';
+          return item.title.toLowerCase().includes(query) || 
+                 desc.toLowerCase().includes(query) ||
+                 purpose.toLowerCase().includes(query);
+        });
+
+        // Default sort by priority (critical -> important -> normal)
+        const rank = { 'critical': 3, 'important': 2, 'normal': 1 };
+        filtered.sort((a, b) => (rank[b.severity] || 0) - (rank[a.severity] || 0));
+
+        if (filtered.length === 0) {
+          grid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 1.1rem;">No guide items found matching your search.</div>';
+          return;
+        }
+
+        filtered.forEach((item) => {
+          // Get category emoji
+          const cat = LIVING_CATEGORIES.find(c => c.id === item.category);
+          const icon = cat ? cat.emoji : '📦';
+
+          // Truncate purpose for preview
+          const shortDesc = item.purpose.length > 95 ? item.purpose.substring(0, 95) + '…' : item.purpose;
+
+          const cardHTML = `
+            <div class="rule-card-shell" onclick="toggleCardFlip(this)">
+               <div class="card-3d-wrap">
+                 <!-- FRONT -->
+                 <div class="card-front">
+                   <div class="card-dot dot-${item.severity}"></div>
+                   <div class="card-icon">${icon}</div>
+                   <h3 class="card-title">${item.title}</h3>
+                   <p class="card-preview">${shortDesc}</p>
+                   <span class="card-badge badge-${item.severity}">${item.importance.toUpperCase()}</span>
+                   <div class="card-flip-hint">
+                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                     Tap to Flip
+                   </div>
+                 </div>
+                 <!-- BACK -->
+                 <div class="card-back">
+                   <div class="card-dot dot-${item.severity}"></div>
+                   <p class="card-back-title">${item.title}</p>
+                   <div class="card-back-scroll">
+                     <div class="card-back-desc">
+                       <p style="margin-bottom: 8px; font-size: 0.88rem; font-weight: 700; color: #111;">
+                         ⏱️ Timeframe: <span style="font-weight: 500; color: #222;">${item.timeframe}</span>
+                       </p>
+                       <p style="margin-bottom: 8px; font-size: 0.88rem; font-weight: 700; color: #111;">
+                         🎯 Priority: <span style="font-weight: 500; color: #222;">${item.importance}</span>
+                       </p>
+                       <p style="border-top: 1px solid rgba(0,0,0,0.06); padding-top: 10px; font-size: 0.86rem; color: #1a1a1a; font-weight: 500; line-height: 1.6; white-space: pre-line; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;">${formatDescription(item.description)}</p>
+                     </div>
+                   </div>
+                   <div class="card-close-hint">
+                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                     Tap to Close
+                   </div>
+                 </div>
+               </div>
+             </div>
+          `;
+          grid.insertAdjacentHTML('beforeend', cardHTML);
+        });
+      }
+
+      // FLIP technique card flip expansion
+      window.toggleCardFlip = function(card) {
+        if (document.querySelector('.clone-card')) return;
+
+        const rect = card.getBoundingClientRect();
+
+        const clone = card.cloneNode(true);
+        clone.classList.add('clone-card');
+        clone.onclick = null;
+        clone.style.transition = 'none';
+        
+        document.body.appendChild(clone);
+
+        const cloneRect = clone.getBoundingClientRect();
+
+        const cloneCenterX = cloneRect.left + cloneRect.width / 2;
+        const cloneCenterY = cloneRect.top + cloneRect.height / 2;
+        const cardCenterX = rect.left + rect.width / 2;
+        const cardCenterY = rect.top + rect.height / 2;
+
+        const deltaX = cardCenterX - cloneCenterX;
+        const deltaY = cardCenterY - cloneCenterY;
+        const scaleX = rect.width / cloneRect.width;
+        const scaleY = rect.height / cloneRect.height;
+
+        clone.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(${scaleX}, ${scaleY})`;
+        
+        card.style.opacity = '0';
+        card.style.pointerEvents = 'none';
+
+        const backdrop = document.getElementById('overlayBackdrop');
+        backdrop.classList.add('active');
+
+        clone.offsetHeight; // force reflow
+
+        requestAnimationFrame(() => {
+          clone.style.transition = 'transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.45s ease';
+          clone.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+          clone.classList.add('is-expanded');
+        });
+
+        let canClose = false;
+        setTimeout(() => { canClose = true; }, 450);
+
+        function closeClone() {
+          if (!canClose) return;
+          canClose = false;
+
+          backdrop.removeEventListener('click', closeClone);
+
+          const latestRect = card.getBoundingClientRect();
+          const latestCardCenterX = latestRect.left + latestRect.width / 2;
+          const latestCardCenterY = latestRect.top + latestRect.height / 2;
+          const latestDeltaX = latestCardCenterX - cloneCenterX;
+          const latestDeltaY = latestCardCenterY - cloneCenterY;
+          const latestScaleX = latestRect.width / cloneRect.width;
+          const latestScaleY = latestRect.height / cloneRect.height;
+
+          clone.style.transform = `translate3d(calc(-50% + ${latestDeltaX}px), calc(-50% + ${latestDeltaY}px), 0) scale(${latestScaleX}, ${latestScaleY})`;
+          clone.classList.remove('is-expanded');
+          backdrop.classList.remove('active');
+
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.pointerEvents = 'auto';
+            clone.remove();
+          }, 450);
+        }
+
+        backdrop.addEventListener('click', closeClone);
+        
+        const closeHint = clone.querySelector('.card-close-hint');
+        if (closeHint) {
+          closeHint.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeClone();
+          });
+        }
+        
+        const cardBack = clone.querySelector('.card-back');
+        if (cardBack) {
+          cardBack.addEventListener('click', (e) => {
+            closeClone();
+          });
+        }
+      };
+
+      // Initial Render
+      renderLivingGuides();
+
+      // Debounced re-render on resize
+      window.addEventListener('resize', () => {
+        clearTimeout(window.resizeTimer);
+        window.resizeTimer = setTimeout(renderLivingGuides, 250);
+      });
+    });
+  </script>
+</body>
+</html>
