@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Master Guide to Japan — GuideToJapan</title>
+  <meta name="description" content="The ultimate, all-in-one resource for going to Japan. Covers short-term travel checklists, visa categories, long-term setups, cultural rules, and specific expat advice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       PREMIUM "EDITORIAL LUXURY" VARIABLES
+       ============================================================ */
+    :root {
+      --bg-cream: #FDFBF7;
+      --bg-white: #FFFFFF;
+      --text-main: #0A0A0A;
+      --text-muted: rgba(10, 10, 10, 0.5);
+      --sun-red: #D90011;
+      
+      /* Shell/Core Double Bezel */
+      --shell-bg: rgba(0, 0, 0, 0.03);
+      --shell-border: rgba(0, 0, 0, 0.04);
+      --core-border: rgba(0, 0, 0, 0.02);
+      
+      /* Emil's Motion Curves */
+      --ease-out-punch: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out-smooth: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      line-height: 1.5;
+      padding-top: 80px; /* Space for sticky header */
+      background-image: radial-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    ::selection { background: var(--sun-red); color: var(--bg-white); }
+
+    /* ============================================================
+       NAVIGATION HEADER
+       ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(253, 251, 247, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--shell-border);
+    }
+
+    .header-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      color: var(--text-main);
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-circle {
+      width: 12px;
+      height: 12px;
+      background: var(--sun-red);
+      border-radius: 50%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 180ms ease;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--sun-red);
+      border-radius: 99px;
+    }
+
+    @media (max-width: 968px) {
+      .nav-links { gap: 16px; }
+      .nav-link { font-size: 0.82rem; }
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        padding: 14px 16px;
+        flex-direction: column;
+        gap: 10px;
+      }
+      body {
+        padding-top: 120px;
+      }
+    }
+
+    /* ============================================================
+       EDITORIAL LAYOUT STRUCTURE
+       ============================================================ */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 48px;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    @media (max-width: 1024px) {
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* Sticky Sidebar Navigation */
+    .guide-sidebar {
+      position: sticky;
+      top: 104px;
+      height: calc(100vh - 140px);
+      overflow-y: auto;
+      padding-right: 12px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0,0,0,0.1) transparent;
+    }
+
+    .guide-sidebar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .guide-sidebar::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.1);
+      border-radius: 99px;
+    }
+
+    @media (max-width: 1024px) {
+      .guide-sidebar {
+        display: none; /* Hide sidebar on smaller viewports */
+      }
+    }
+
+    .sidebar-menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .sidebar-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      padding-left: 12px;
+    }
+
+    .sidebar-link {
+      display: block;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 180ms ease;
+    }
+
+    .sidebar-link:hover, .sidebar-link.active {
+      color: var(--text-main);
+      background: rgba(0,0,0,0.03);
+    }
+    .sidebar-link.active {
+      border-left: 3px solid var(--sun-red);
+      padding-left: 9px;
+    }
+
+    /* Content Area */
+    .guide-content {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    /* ============================================================
+       HERO & SECTIONS
+       ============================================================ */
+    .hero-section {
+      min-height: 45vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      width: 100%;
+      align-items: center;
+      position: relative;
+    }
+
+    .sun-circle {
+      width: clamp(200px, 30vw, 400px);
+      height: clamp(200px, 30vw, 400px);
+      background-color: var(--sun-red);
+      border-radius: 50%;
+      position: absolute;
+      opacity: 0;
+      animation: sunReveal 1.2s var(--ease-out-punch) forwards;
+    }
+
+    @keyframes sunReveal {
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 968px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-visual {
+        order: -1;
+        height: 150px;
+      }
+      .sun-circle {
+        width: 140px;
+        height: 140px;
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+
+    /* Progress Path Visualizer */
+    .progress-path-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 36px;
+      background: rgba(0,0,0,0.02);
+      padding: 12px 24px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid var(--shell-border);
+    }
+
+    .path-step {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .path-step.active {
+      color: var(--sun-red);
+    }
+
+    .path-arrow {
+      color: rgba(0,0,0,0.15);
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .progress-path-wrap {
+        flex-wrap: wrap;
+        border-radius: 16px;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    /* General section structure */
+    .guide-section {
+      scroll-margin-top: 100px;
+    }
+
+    .section-eyebrow {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      color: var(--sun-red);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin-bottom: 36px;
+    }
+
+    /* ============================================================
+       COMPONENTS: ACCORDIONS, TABLES, CARDS, CHECKLISTS
+       ============================================================ */
+
+    /* Double Bezel Cards (Shared) */
+    .luxury-card {
+      background: rgba(253, 251, 247, 0.6);
+      border: 1px solid var(--shell-border);
+      border-radius: 24px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.01);
+      position: relative;
+      overflow: hidden;
+      transition: transform 300ms var(--ease-out-punch), box-shadow 300ms var(--ease-out-punch);
+      will-change: transform;
+    }
+
+    .luxury-card::before {
+      content: '';
+      position: absolute;
+      top: 8px; left: 8px; right: 8px; bottom: 8px;
+      background: var(--bg-white);
+      border-radius: 18px;
+      border: 1px solid var(--core-border);
+      z-index: 1;
+    }
+
+    .luxury-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      border: 3px solid var(--sun-red);
+      border-radius: inherit;
+      opacity: 0;
+      transition: opacity 250ms var(--ease-out-punch);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .luxury-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    }
+
+    .luxury-card:hover::after {
+      opacity: 1;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Bento Grid */
+    .bento-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .bento-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .bento-grid-2, .bento-grid-3 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+
+    /* Custom Brackets */
+    .corner-border {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border: 0 solid var(--sun-red);
+      opacity: 0;
+      transition: all 300ms var(--ease-out-punch);
+      pointer-events: none;
+      z-index: 5;
+    }
+    .corner-tl { top: 10px; left: 10px; border-top-width: 3px; border-left-width: 3px; border-top-left-radius: 6px; transform: translate(-4px, -4px); }
+    .corner-tr { top: 10px; right: 10px; border-top-width: 3px; border-right-width: 3px; border-top-right-radius: 6px; transform: translate(4px, -4px); }
+    .corner-bl { bottom: 10px; left: 10px; border-bottom-width: 3px; border-left-width: 3px; border-bottom-left-radius: 6px; transform: translate(-4px, 4px); }
+    .corner-br { bottom: 10px; right: 10px; border-bottom-width: 3px; border-right-width: 3px; border-bottom-right-radius: 6px; transform: translate(4px, 4px); }
+
+    .luxury-card:hover .corner-border {
+      opacity: 1;
+      transform: translate(0,0);
+    }
+
+    /* Callout Card (Warning/Alert style) */
+    .callout-box {
+      background: rgba(217, 0, 17, 0.03);
+      border: 1px solid rgba(217, 0, 17, 0.15);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 24px;
+      position: relative;
+    }
+    .callout-box::before {
+      content: '!';
+      position: absolute;
+      top: -10px; left: 24px;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: var(--sun-red);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.75rem;
+    }
+    .callout-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--sun-red);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .callout-text {
+      font-size: 0.88rem;
+      color: #333;
+      line-height: 1.55;
+    }
+
+    /* Accordion Styles */
+    .accordion-item {
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 18px 0;
+    }
+    .accordion-item:last-child {
+      border-bottom: none;
+    }
+    .accordion-trigger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      padding: 4px 0;
+      transition: color 0.2s ease;
+    }
+    .accordion-trigger:hover {
+      color: var(--sun-red);
+    }
+    .accordion-icon {
+      width: 20px; height: 20px;
+      transition: transform 300ms var(--ease-out-punch);
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 350ms cubic-bezier(0.23, 1, 0.32, 1), margin-top 0.2s ease;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+    .accordion-item.active .accordion-content {
+      max-height: 1000px; /* High enough max-height */
+      margin-top: 14px;
+    }
+    .accordion-item.active .accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Comparison Table Styles */
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--shell-border);
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.01);
+      margin-top: 24px;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .comp-table th, .comp-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      font-size: 0.92rem;
+    }
+
+    .comp-table th {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: #999;
+      background: rgba(0,0,0,0.01);
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comp-table td strong {
+      color: var(--sun-red);
+    }
+
+    /* Checklist Grid style */
+    .checklist-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) {
+      .checklist-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+    .checklist-column {
+      background: #ffffff;
+      border: 1px solid var(--shell-border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.01);
+    }
+    .checklist-col-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 18px;
+      border-bottom: 2px solid var(--shell-border);
+      padding-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.88rem;
+      color: #333;
+      line-height: 1.5;
+    }
+    .check-item:last-child {
+      margin-bottom: 0;
+    }
+    .check-bullet {
+      color: var(--sun-red);
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    /* Cards details */
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      line-height: 1;
+      display: inline-block;
+    }
+    .card-title-lg {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .card-desc-muted {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Visual Timeline Nodes */
+    .timeline-journey {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 24px;
+      position: relative;
+      padding-left: 32px;
+    }
+    .timeline-journey::before {
+      content: '';
+      position: absolute;
+      top: 8px; bottom: 8px; left: 10px;
+      width: 2px;
+      background: rgba(0,0,0,0.08);
+    }
+    .timeline-step {
+      position: relative;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: -32px; top: 4px;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 4px solid var(--bg-cream);
+      background: var(--text-muted);
+      transition: all 0.3s ease;
+    }
+    .timeline-step:hover .timeline-dot {
+      background: var(--sun-red);
+      box-shadow: 0 0 0 4px rgba(217, 0, 17, 0.15);
+    }
+    .timeline-step-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .timeline-step-meta {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--sun-red);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+      display: block;
+    }
+    .timeline-step-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-top: 6px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--shell-border);
+      padding: 60px 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.01);
+      margin-top: 100px;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED NAVIGATION HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-circle"></span>
+        <span class="logo-text">GuideToJapan</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="JapanVisas.html" class="nav-link">Visas</a>
+        <a href="JapanTravelRules.html" class="nav-link">Travel Rules</a>
+        <a href="AfterLanding.html" class="nav-link">After Landing</a>
+        <a href="Roadmap.html" class="nav-link">Roadmap</a>
+        <a href="JapanGuide.html" class="nav-link active">Japan Guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container section-spacing">
+    
+    <!-- EDITORIAL LAYOUT -->
+    <div class="editorial-grid">
+      
+      <!-- STICKY SIDEBAR -->
+      <aside class="guide-sidebar">
+        <h4 class="sidebar-title">Sections</h4>
+        <ul class="sidebar-menu">
+          <li><a href="#hero" class="sidebar-link active">1. Overview</a></li>
+          <li><a href="#why-japan" class="sidebar-link">2. Why Japan?</a></li>
+          <li><a href="#visa-types" class="sidebar-link">3. All Visa Types</a></li>
+          <li><a href="#timeline-journey" class="sidebar-link">4. The Full Journey</a></li>
+          <li><a href="#short-term" class="sidebar-link">5. Short-Term Checklist</a></li>
+          <li><a href="#long-term" class="sidebar-link">6. Long-Term Checklist</a></li>
+          <li><a href="#geography" class="sidebar-link">7. Geography & Cities</a></li>
+          <li><a href="#rules-laws" class="sidebar-link">8. Rules & Deportations</a></li>
+          <li><a href="#language" class="sidebar-link">9. Language Guide</a></li>
+          <li><a href="#cost-living" class="sidebar-link">10. Cost Comparison</a></li>
+          <li><a href="#healthcare" class="sidebar-link">11. Healthcare & Welfare</a></li>
+          <li><a href="#workplace" class="sidebar-link">12. Work Culture</a></li>
+          <li><a href="#indian-expat" class="sidebar-link">13. Indian Expat Guide</a></li>
+          <li><a href="#seasons" class="sidebar-link">14. Seasons & Weather</a></li>
+          <li><a href="#safety" class="sidebar-link">15. Emergency & Safety</a></li>
+          <li><a href="#banking" class="sidebar-link">16. Money & Banking</a></li>
+          <li><a href="#housing" class="sidebar-link">17. Housing Rules</a></li>
+          <li><a href="#education" class="sidebar-link">18. School Education</a></li>
+          <li><a href="#pets" class="sidebar-link">19. Pet Importation</a></li>
+          <li><a href="#driving" class="sidebar-link">20. Driving & Licenses</a></li>
+          <li><a href="#final" class="sidebar-link">21. Final Message</a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTENT SECTIONS -->
+      <main class="guide-content">
+
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section guide-section">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <span class="section-eyebrow">Master Directory</span>
+              <h1>Your Complete<br>Guide to Japan<span class="hero-jp">日本の渡航と生活の完全ガイド</span></h1>
+              <p class="subtitle" style="margin-bottom: 24px;">An elite compiled encyclopedia guiding you from initial visa selection and flight logistics all the way through long-term social codes, local tax systems, and community setups.</p>
+              
+              <div class="progress-path-wrap">
+                <div class="path-step active">Travel</div>
+                <span class="path-arrow">➔</span>
+                <div class="path-step">Study</div>
+                <span class="path-arrow">➔</span>
+                <div class="path-step">Work</div>
+                <span class="path-arrow">➔</span>
+                <div class="path-step">Live</div>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="sun-circle"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. WHY JAPAN -->
+        <section id="why-japan" class="guide-section">
+          <span class="section-eyebrow">Motivation</span>
+          <h2 class="section-title">Why Choose Japan?</h2>
+          <p class="section-subtitle">Evaluating the advantages and core motivations at every residency stage.</p>
+
+          <div class="bento-grid-2">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <span class="card-icon">⛩️</span>
+                <h3 class="card-title-lg">For Travel</h3>
+                <p class="card-desc-muted">World-class hospitality (Omotenashi), incredibly rich cultural heritage, immaculate public safety, and a highly efficient bullet train network.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <span class="card-icon">🎓</span>
+                <h3 class="card-title-lg">For Study</h3>
+                <p class="card-desc-muted">Prestigious universities, highly immersive language academies, local school disciplines, and post-study employment conversion systems.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <span class="card-icon">💼</span>
+                <h3 class="card-title-lg">For Work</h3>
+                <p class="card-desc-muted">High safety, stable corporate opportunities in IT, engineering, and commerce, plus expedited paths to permanent residency (HSP visas).</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <span class="card-icon">🏡</span>
+                <h3 class="card-title-lg">For Permanent Life</h3>
+                <p class="card-desc-muted">Excellent universal healthcare co-pay system, premium elderly welfare programs, reliable child services, and deep social community ties.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 3. ALL VISA TYPES -->
+        <section id="visa-types" class="guide-section">
+          <span class="section-eyebrow">Immigration</span>
+          <h2 class="section-title">Statuses of Residence & Visas</h2>
+          <p class="section-subtitle">Official visa categories under 2026 regulations. Review purposes, typical durations, and work allowances.</p>
+
+          <div class="luxury-card" style="padding: 24px;">
+            <div class="card-content">
+              
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Short-Term Visas
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Temporary Visitor:</strong> For tourism, family visits, or short business meetings. Valid for 15, 30, or up to 90 days. Work is strictly prohibited. Indians must apply in advance via visa processing centers (VFS).</p>
+                  <p style="margin-top: 8px;"><strong>• Transit Visa:</strong> For transit through airports. Valid up to 15 days. Work prohibited.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Study Visas
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Student Visa:</strong> For study at universities, vocational colleges, or language academies. Valid for 3 months to 2 years and 3 months. Work allowed up to 28 hours per week with a special stamp (Shikakugai Katsudo Kyoka).</p>
+                  <p style="margin-top: 8px;"><strong>• Cultural Activities:</strong> For unpaid internships, studying traditional arts, martial arts, or tea ceremonies. Valid for 3 months to 1 year. Work is prohibited.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Work Visas
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Engineer / Specialist in Humanities / International Services (EHI):</strong> The most common professional work visa. Valid for 1, 3, or 5 years. Work is limited strictly to your contracted corporate field. Leads to PR track.</p>
+                  <p style="margin-top: 8px;"><strong>• Highly Skilled Professional (HSP):</strong> Points-based visa for elite profiles. Offers expedited Permanent Residency (PR in 3 years with 70 points, or 1 year with 80 points). Valid for 5 years.</p>
+                  <p style="margin-top: 8px;"><strong>• Business Manager:</strong> For startup founders or managing directors. Requires ¥5,000,000 capital (or ¥30,000,000 capital under new rules depending on corporate size) and a physical office space.</p>
+                  <p style="margin-top: 8px;"><strong>• Specified Skilled Worker (SSW):</strong> For trade industries (SSW1 valid up to 5 years, limited family sponsorship; SSW2 allows infinite renewals and family sponsorship).</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Family & Spousal Visas
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Spouse of Japanese National:</strong> Valid for 1, 3, or 5 years. Absolute work freedom (any industry, full-time allowed). Leads to PR in as little as 1 year of marriage + 3 years residency.</p>
+                  <p style="margin-top: 8px;"><strong>• Dependent Visa:</strong> For spouses and children of working residents. Valid based on parent's visa duration. Work allowed up to 28 hours per week with permission.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Long-Term & Special Categories
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Digital Nomad (Designated Activities):</strong> For remote workers. Valid up to 6 months (non-renewable). Requires ~¥10,000,000 annual income and private health insurance. Work for foreign entities allowed.</p>
+                  <p style="margin-top: 8px;"><strong>• J-Find (Designated Activities):</strong> For graduates of top-ranked worldwide universities looking for work in Japan. Valid up to 2 years.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Settlement & Permanent Status
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Permanent Resident (PR):</strong> Indefinite stay. Complete work freedom. Standard track is 10 years of continuous residence (including 5 years on a work visa), or faster via Highly Skilled points track.</p>
+                  <p style="margin-top: 8px;"><strong>• Naturalized Citizen:</strong> Acquisition of Japanese nationality. Requires 5 years residency, N3-N2 language capability, tax compliance, and relinquishing other passports.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. THE FULL JOURNEY -->
+        <section id="timeline-journey" class="guide-section">
+          <span class="section-eyebrow">Roadmap</span>
+          <h2 class="section-title">The Relocation Journey</h2>
+          <p class="section-subtitle">A typical chronological timeline from arrival to naturalization.</p>
+
+          <div class="luxury-card" style="padding: 24px;">
+            <div class="card-content">
+              <div class="timeline-journey">
+                
+                <div class="timeline-step">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-step-title">Step 1: Entry & Temporary Setup</h4>
+                  <span class="timeline-step-meta">Month 1</span>
+                  <p class="timeline-step-desc">Arrival, border control checks, receiving the Residence Card (Zairyu Card) at the airport, and registering your physical address at the municipal office.</p>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-step-title">Step 2: Integration & Acculturation</h4>
+                  <span class="timeline-step-meta">Years 1–3</span>
+                  <p class="timeline-step-desc">Mastering local garbage segregation rules, gaining conversational proficiency (JLPT N4–N3), enrolling in municipal tax systems, and establishing credit history.</p>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-step-title">Step 3: Professional Progression</h4>
+                  <span class="timeline-step-meta">Years 3–5</span>
+                  <p class="timeline-step-desc">Visa renewals, career moves, switching to self-employment, and upgrading to the Highly Skilled Professional (HSP) points-based track.</p>
+                </div>
+
+                <div class="timeline-step">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-step-title">Step 4: Permanent Settlement (PR)</h4>
+                  <span class="timeline-step-meta">Year 10 (or Year 1–3 via HSP)</span>
+                  <p class="timeline-step-desc">Applying for Permanent Residency. Requires continuous tax and pension records, clean legal background, and solid stability in Japan.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. SHORT-TERM CHECKLIST -->
+        <section id="short-term" class="guide-section">
+          <span class="section-eyebrow">Checklists</span>
+          <h2 class="section-title">Short-Term Checklist</h2>
+          <p class="section-subtitle">Essential requirements and rules for tourists and temporary visitors staying under 90 days.</p>
+
+          <div class="checklist-container">
+            
+            <div class="checklist-column">
+              <h3 class="checklist-col-title">📁 Must Have</h3>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Valid Passport (6+ months validity remaining)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Pre-approved Tourist Visa (mandatory for Indians)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Confirmed return flight ticket and accommodation bookings</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Comprehensive Travel Insurance (covers emergency medical care)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Sufficient Cash (Japan remains highly cash-preferring for local clinics and transit)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Suica or Pasmo IC Card (pre-ordered or acquired at airport station)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Pocket Wi-Fi or local eSIM/SIM card</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Type A Voltage Adaptor (Japan operates on 100V, 50/60Hz)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Apps: Google Translate (camera live mode), Navitime/Google Maps</span></div>
+            </div>
+
+            <div class="checklist-column">
+              <h3 class="checklist-col-title">⚖️ Must Do / Behavior</h3>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Register nothing — tourists do not need local address registration</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Do not work — working even a single day on a tourist visa is strictly illegal</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Do not overstay — overstaying even by one day leads to arrest and long bans</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Carry passport at all times — police have legal rights to inspect tourist papers</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Buy a Japan Rail Pass before departure — cheaper to acquire outside Japan</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Earthquake Awareness — know the "Drop, Cover, Hold" drill</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Avoid Roppongi/Kabukicho solicitation — ignore promoters inviting you to bars</span></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 6. LONG-TERM CHECKLIST -->
+        <section id="long-term" class="guide-section">
+          <span class="section-eyebrow">Checklists</span>
+          <h2 class="section-title">Long-Term Checklist</h2>
+          <p class="section-subtitle">Critical requirements, setups, and legal registrations for students, professionals, and residents.</p>
+
+          <div class="checklist-container">
+            
+            <div class="checklist-column">
+              <h3 class="checklist-col-title">📄 Legal & Documents</h3>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Zairyu Card (Residence Card) — received at airport, carry it 24/7</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Address Registration — register at ward office within 14 days of moving in</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>My Number Card — national tax/social security ID (apply at ward office)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>National Health Insurance card (Kokumin Kenko Hoken) — mandatory</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Japan Pension Book — mandatory pension contributions for ages 20–59</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Domestic Bank Account — JP Post Bank or 7-Bank (easiest to start)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Hanko (Personal Seal) — customized stamp for official signatures</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Re-entry permit — required if leaving Japan for over 1 year</span></div>
+            </div>
+
+            <div class="checklist-column">
+              <h3 class="checklist-col-title">⚙️ Practical & Cultural</h3>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Get voice-enabled Japanese SIM (requires Residence Card + registered address)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Set up automatic utility bank deductions (water, gas, electricity, internet)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Acquire and register a bicycle at the purchase shop (mandatory)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Guarantor system — utilize guarantor companies if renting apartments</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Master strict garbage separation schedules (Gomi rules)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Acknowledge neighborhood community fees (Chokai)</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Respect Tatami straw-mat rooms — no shoes, no heavy furniture</span></div>
+              <div class="check-item"><span class="check-bullet">✔</span><span>Understand Honne (true feelings) vs Tatemae (polite facade)</span></div>
+            </div>
+
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="table-wrapper">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Feature Comparison</th>
+                  <th>Short-Term (Tourist)</th>
+                  <th>Long-Term (Resident)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Zairyu (Residence) Card</strong></td>
+                  <td>❌ Not issued</td>
+                  <td>✅ Mandatory, must carry always</td>
+                </tr>
+                <tr>
+                  <td><strong>City Hall Registration</strong></td>
+                  <td>❌ Not needed</td>
+                  <td>✅ Mandatory within 14 days of moving</td>
+                </tr>
+                <tr>
+                  <td><strong>Health Insurance</strong></td>
+                  <td>❌ Private travel insurance only</td>
+                  <td>✅ National Health Insurance (mandatory)</td>
+                </tr>
+                <tr>
+                  <td><strong>Bank Account</strong></td>
+                  <td>❌ Not allowed</td>
+                  <td>✅ Essential for rent and salary</td>
+                </tr>
+                <tr>
+                  <td><strong>My Number ID</strong></td>
+                  <td>❌ Not issued</td>
+                  <td>✅ Issued, used for taxes and admin</td>
+                </tr>
+                <tr>
+                  <td><strong>Work Allowance</strong></td>
+                  <td>❌ Strictly Prohibited</td>
+                  <td>✅ Allowed based on visa terms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 7. GEOGRAPHY -->
+        <section id="geography" class="guide-section">
+          <span class="section-eyebrow">Geography</span>
+          <h2 class="section-title">Where to Live</h2>
+          <p class="section-subtitle">Evaluating major Japanese cities based on career prospects, living costs, and general vibes.</p>
+
+          <div class="bento-grid-2">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Tokyo</h3>
+                <p class="card-desc-muted" style="margin-bottom: 12px;">The career center. Best for office jobs, corporate headquarters, and high-energy lifestyles.</p>
+                <p style="font-size: 0.85rem; color: var(--sun-red); font-weight: 700;">Est. Cost: ¥150,000–¥250,000 / month</p>
+                <p style="font-size: 0.85rem; margin-top: 6px; color: var(--text-muted);"><strong>Pros:</strong> High salaries, massive English support. <strong>Cons:</strong> Small apartments, crowded.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Osaka</h3>
+                <p class="card-desc-muted" style="margin-bottom: 12px;">The food capital. Laid-back culture, friendly locals, and a strong mercantile history.</p>
+                <p style="font-size: 0.85rem; color: var(--sun-red); font-weight: 700;">Est. Cost: ¥110,000–¥170,000 / month</p>
+                <p style="font-size: 0.85rem; margin-top: 6px; color: var(--text-muted);"><strong>Pros:</strong> Affordable rent, warm community. <strong>Cons:</strong> Slightly lower wages than Tokyo.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Fukuoka</h3>
+                <p class="card-desc-muted" style="margin-bottom: 12px;">The startup hub. Fast-growing, beachfront urban design, expat-friendly business setup.</p>
+                <p style="font-size: 0.85rem; color: var(--sun-red); font-weight: 700;">Est. Cost: ¥90,000–¥140,000 / month</p>
+                <p style="font-size: 0.85rem; margin-top: 6px; color: var(--text-muted);"><strong>Pros:</strong> Beautiful scenery, startup visas. <strong>Cons:</strong> Limited English corporate jobs.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Kyoto</h3>
+                <p class="card-desc-muted" style="margin-bottom: 12px;">The cultural core. Highly traditional architecture, tourist-dense, and rich academic centers.</p>
+                <p style="font-size: 0.85rem; color: var(--sun-red); font-weight: 700;">Est. Cost: ¥100,000–¥150,000 / month</p>
+                <p style="font-size: 0.85rem; margin-top: 6px; color: var(--text-muted);"><strong>Pros:</strong> Stunning temples, academic hub. <strong>Cons:</strong> Extreme summer heat, tourist congestion.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 8. RULES & LAWS -->
+        <section id="rules-laws" class="guide-section">
+          <span class="section-eyebrow">Regulations</span>
+          <h2 class="section-title">Rules, Laws & Deportations</h2>
+          <p class="section-subtitle">Understanding legal duties, local rules, and offenses leading to visa cancellation.</p>
+
+          <div class="luxury-card" style="padding: 24px;">
+            <div class="card-content">
+              
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Key Legal Obligations
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Address changes:</strong> You must update your address at the local ward office within 14 days of moving. Failure to notify can freeze administrative renewals.</p>
+                  <p style="margin-top: 8px;"><strong>• Worldwide Income Tax:</strong> After residing in Japan for a cumulative 5 years, you qualify as a "permanent tax resident" and Japan can tax your income sourced globally.</p>
+                  <p style="margin-top: 8px;"><strong>• Re-entry Permits:</strong> If departing Japan for more than 1 year, you must apply for a re-entry permit. Under 1 year, you receive a special automatic re-entry permit at airport immigration.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  Traffic & Road Curfews
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Zero Tolerance Drunk Driving:</strong> The legal blood-alcohol limit is 0.00%. Driving or cycling under the influence of alcohol leads to immediate arrest, massive fines, and visa cancellation.</p>
+                  <p style="margin-top: 8px;"><strong>• Bicycle laws:</strong> Police perform regular random checks on bicycle registration to prevent theft. Cycling on sidewalks is restricted, and using umbrellas or headphones while cycling is fined.</p>
+                  <p style="margin-top: 8px;"><strong>• Noise Curfews:</strong> Vacuuming, doing laundry, or playing music after 9-10 PM is considered extremely rude due to thin apartment walls.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                  ⚠️ Offenses Leading to Deportation
+                  <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>• Visa Overstay:</strong> Staying even one day past your visa expiration date without an active extension application is a serious offense leading to detention and deportation.</p>
+                  <p style="margin-top: 8px;"><strong>• Unauthorized Work:</strong> Working even a single day on a tourist visa or exceeding the 28-hour student limit will lead to deportations and host employer penalties.</p>
+                  <p style="margin-top: 8px;"><strong>• Convictions:</strong> Japan maintains a 99% conviction rate. Any arrest for theft, physical disputes, or drug violations results in career termination and immediate deportation.</p>
+                  <p style="margin-top: 8px;"><strong>• Tax Evasion:</strong> Intentionally refusing to pay income tax or resident tax for multiple consecutive years will lead to visa rejection or deportation.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 9. LANGUAGE GUIDE -->
+        <section id="language" class="guide-section">
+          <span class="section-eyebrow">Language</span>
+          <h2 class="section-title">Language Integration</h2>
+          <p class="section-subtitle">Understanding JLPT levels, Japanese scripts, and translation hacks.</p>
+
+          <div class="luxury-card">
+            <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+            <div class="card-content">
+              <h3 class="card-title-lg" style="margin-bottom: 16px;">The 3 Scripts</h3>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>1. Hiragana:</strong> Basic phonetic alphabet for native Japanese words (46 characters).</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>2. Katakana:</strong> Phonetic alphabet specifically used for foreign loan words, names, and menu items (46 characters).</p>
+              <p class="card-desc-muted" style="margin-bottom: 24px;"><strong>3. Kanji:</strong> Chinese characters representing full ideas or words. You need about 2,000 to read a daily newspaper.</p>
+
+              <h3 class="card-title-lg" style="margin-bottom: 16px;">JLPT Proficiency Levels</h3>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>• N5 & N4:</strong> Basic phrases, travel-level conversations, hiragana/katakana capability.</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>• N3:</strong> Conversational level. Essential for daily life independence and basic service jobs.</p>
+              <p class="card-desc-muted" style="margin-bottom: 24px;"><strong>• N2 & N1:</strong> Professional level. N2 is the absolute minimum requirement for office jobs, engineering desks, and visa fast-tracks.</p>
+
+              <div class="callout-box" style="margin-top: 0;">
+                <div class="callout-title">Camera Mode Translation Tip</div>
+                <p class="callout-text">Since electricity bills, municipal notices, and postal receipts are 100% in Japanese, install Google Translate. Its camera mode translates any Japanese text to English in real time, preventing late fees or legal oversights.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10. COST OF LIVING -->
+        <section id="cost-living" class="guide-section">
+          <span class="section-eyebrow">Finance</span>
+          <h2 class="section-title">Cost of Living Comparison</h2>
+          <p class="section-subtitle">Approximate 2026 monthly expenses across major Japanese cities (in Japanese Yen).</p>
+
+          <div class="table-wrapper">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Monthly Expense Category</th>
+                  <th>Tokyo (Metropolitan)</th>
+                  <th>Osaka (Kansai)</th>
+                  <th>Fukuoka (Kyushu)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Rent (1R / 1K Apartment)</strong></td>
+                  <td>¥75,000 – ¥110,000</td>
+                  <td>¥50,000 – ¥75,000</td>
+                  <td>¥40,000 – ¥60,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Utilities (Electricity, Gas, Water)</strong></td>
+                  <td>¥12,000 – ¥18,000</td>
+                  <td>¥10,000 – ¥15,000</td>
+                  <td>¥10,000 – ¥14,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Food & Groceries</strong></td>
+                  <td>¥40,000 – ¥60,000</td>
+                  <td>¥35,000 – ¥50,000</td>
+                  <td>¥30,000 – ¥45,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Mobile SIM & Fiber Internet</strong></td>
+                  <td>¥6,000 – ¥9,000</td>
+                  <td>¥6,000 – ¥8,000</td>
+                  <td>¥5,500 – ¥7,500</td>
+                </tr>
+                <tr>
+                  <td><strong>Transit & Local Commutes</strong></td>
+                  <td>¥10,000 – ¥15,000</td>
+                  <td>¥8,000 – ¥12,000</td>
+                  <td>¥6,000 – ¥9,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Total Average Budget</strong></td>
+                  <td><strong>¥143,000 – ¥212,000</strong></td>
+                  <td><strong>¥109,000 – ¥160,000</strong></td>
+                  <td><strong>¥91,500 – ¥135,500</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 11. HEALTHCARE -->
+        <section id="healthcare" class="guide-section">
+          <span class="section-eyebrow">Medical</span>
+          <h2 class="section-title">Universal Healthcare & Welfare</h2>
+          <p class="section-subtitle">How health insurance works, and vital warnings regarding imported medications.</p>
+
+          <div class="bento-grid-2">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">National Health Insurance</h3>
+                <p class="card-desc-muted">Japan operates on a 70/30 payment split. The government covers 70% of medical and dental expenses; you pay a 30% co-pay out of pocket. Walk-in clinic visits are cheap and fast.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Clinic-First Referral System</h3>
+                <p class="card-desc-muted">Do not visit big hospitals first. The Japanese healthcare system requires you to visit a local clinic first. If needed, the clinic doctor writes a referral letter. Walking into a hospital without a referral incurs a high surcharge.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="callout-box">
+            <div class="callout-title">⚠️ Banned Prescription Medicines Warning</div>
+            <p class="callout-text">Many common Indian prescription medications (including certain painkillers, strong cough syrups, ADHD medications, and sleeping pills) contain active ingredients that are classified as narcotics or illegal stimulants under Japanese law. Carrying them into the country without prior government approval (Yakkan Shoumei) leads to immediate customs confiscation and arrest at the border.</p>
+          </div>
+        </section>
+
+        <!-- 12. WORKPLACE CULTURE -->
+        <section id="workplace" class="guide-section">
+          <span class="section-eyebrow">Career</span>
+          <h2 class="section-title">Workplace Culture Deep-Dive</h2>
+          <p class="section-subtitle">Understanding key consensus models, formal hierarchies, and social expectations.</p>
+
+          <div class="bento-grid-3">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Nemawashi</h3>
+                <p class="card-desc-muted">"Pruning the roots." Before any official meeting, managers consult all affected parties individually to reach consensus. Official decisions are rarely debated in public meetings.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Ringi System</h3>
+                <p class="card-desc-muted">A bottom-up decision-making model where proposals circulate on a document to receive approval stamps (hanko) from every tier of management before execution.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Nomikai</h3>
+                <p class="card-desc-muted">After-work drinking parties with colleagues. While technically optional, attendance is culturally expected to build workplace trusts (Nomication) and network.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="callout-box" style="margin-top: 20px; border-color: rgba(0,0,0,0.1); background: none;">
+            <div class="callout-title" style="color: var(--text-main);">Paid Leave & Workplace Reality</div>
+            <p class="callout-text">Paid leave is a legal right protected by Japanese labor laws. However, culturally, taking all of your holiday can be frowned upon as putting extra burden on team members. Most corporate workers take only half their entitlement. Navigate this diplomatically, and ensure your N2/N1 Keigo is practiced when raising concerns privately.</p>
+          </div>
+        </section>
+
+        <!-- 13. IF YOU ARE INDIAN -->
+        <section id="indian-expat" class="guide-section">
+          <span class="section-eyebrow">Indians in Japan</span>
+          <h2 class="section-title">Special Guide for Indians</h2>
+          <p class="section-subtitle">Critical tips, dietary workarounds, community networks, and sending money home.</p>
+
+          <div class="luxury-card">
+            <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+            <div class="card-content">
+              
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">🥘 Vegetarian & Vegan Options Difficulty</h3>
+              <p class="card-desc-muted" style="margin-bottom: 24px;">Vegetarianism is not widely understood in Japan. Even dishes marked "vegetable" or "tofu" almost always contain fish stock (dashi) or pork extract. When dining, ask specifically: <em>"Dashi wa sakana desu ka?"</em> (Is the broth fish-based?). Seek Indian vegetarian dining in Tokyo's Nishi-Kasai area (known locally as "Little India").</p>
+
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">💸 International Money Transfers</h3>
+              <p class="card-desc-muted" style="margin-bottom: 24px;">Avoid using traditional Japanese commercial banks for sending money back to India — they are slow, expensive, and require tedious paperwork. Services like <strong>Wise</strong> or <strong>Revolut</strong> offer immediate conversions and much cheaper rates. Set them up using your Residence Card.</p>
+
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">👥 Community Networks</h3>
+              <p class="card-desc-muted">Connect with active Indian community networks on Facebook and WhatsApp. Major temples, such as the ISKCON temple in Tokyo, serve as excellent social networks offering guidance on housing, visas, and employment referrals.</p>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 14. SEASONS & WEATHER -->
+        <section id="seasons" class="guide-section">
+          <span class="section-eyebrow">Climatology</span>
+          <h2 class="section-title">Seasons & Weather You Must Know</h2>
+          <p class="section-subtitle">Evaluating seasonal shifts, humidity, and national holiday clusters.</p>
+
+          <div class="table-wrapper">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Season & Months</th>
+                  <th>Climatic Conditions</th>
+                  <th>Key Events & Evacuation Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Spring</strong> (Mar – May)</td>
+                  <td>Mild, pleasant weather. cherry blossoms bloom.</td>
+                  <td><strong>Golden Week</strong> (late April – early May): Entire country travels simultaneously. Hotel rates triple.</td>
+                </tr>
+                <tr>
+                  <td><strong>Rainy Season (Tsuyu)</strong> (June – July)</td>
+                  <td>High humidity, constant damp rain.</td>
+                  <td>Mold prevention is critical indoors. Use dehumidifiers.</td>
+                </tr>
+                <tr>
+                  <td><strong>Summer</strong> (July – August)</td>
+                  <td>Extreme heat and humidity (up to 38°C, 80%+ humidity).</td>
+                  <td>Higher humidity than Bihar/Delhi. Stock up on hydration. <strong>O-Bon festival</strong> (mid-August).</td>
+                </tr>
+                <tr>
+                  <td><strong>Typhoon Season</strong> (August – October)</td>
+                  <td>Severe wind, heavy rain, public transit halts.</td>
+                  <td>Typhoons strike regularly. Check evacuation routes. Download NHK World app.</td>
+                </tr>
+                <tr>
+                  <td><strong>Winter</strong> (Dec – Feb)</td>
+                  <td>Cold, crisp, heavy snow in northern areas (Hokkaido).</td>
+                  <td><strong>New Year (Oshogatsu)</strong>: Major shutdown from Jan 1–3. Stock up on groceries.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 15. EMERGENCY & SAFETY -->
+        <section id="safety" class="guide-section">
+          <span class="section-eyebrow">Safety</span>
+          <h2 class="section-title">Emergency & Public Safety</h2>
+          <p class="section-subtitle">Dialing rescue services, surviving earthquakes, and understanding train etiquettes.</p>
+
+          <div class="bento-grid-2">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">📞 Emergency Contact Lines</h3>
+                <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>• Police (110):</strong> Dial for traffic accidents, reporting theft, or physical security emergencies.</p>
+                <p class="card-desc-muted"><strong>• Ambulance & Fire (119):</strong> Dial for injuries, fire outbreaks, or immediate health emergencies. Free from any phone; translation options available.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">🌋 Earthquake Survival</h3>
+                <p class="card-desc-muted">Japan sits on the Pacific Ring of Fire. Learn the basic "Drop, Cover, Hold" safety drill. Evacuation maps are posted in every hotel room and apartment corridor. Check local municipality maps for regional evacuation parks.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="callout-box">
+            <div class="callout-title">Train Safety & Chikan (Groping)</div>
+            <p class="callout-text">Crowded transit trains in major metropolitans face issues with chikan (groping). To protect passengers, railway systems designate specific "Women Only" carriages during morning and evening rush hours. Respect these rules, and always keep your hands visible (holding phone or bags) in packed subway trains.</p>
+          </div>
+        </section>
+
+        <!-- 16. MONEY & BANKING -->
+        <section id="banking" class="guide-section">
+          <span class="section-eyebrow">Finance</span>
+          <h2 class="section-title">Money, Banking & Tax Deductions</h2>
+          <p class="section-subtitle">Maximizing cashless points and navigating local tax breaks.</p>
+
+          <div class="bento-grid-2">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Rakuten & PayPay Point Culture</h3>
+                <p class="card-desc-muted">Cashless points save real money. Set up Rakuten Card or PayPay early. Almost all convenience stores, restaurants, and shopping malls offer loyalty points that can be redeemed directly at the cash counter.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Furusato Nozei Hometown Tax</h3>
+                <p class="card-desc-muted">A highly popular tax deduction system. You donate a portion of your local resident tax to rural towns. In return, the towns send you local goods (beef, rice, fruits) and the donation is deducted from your next year's taxes.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 17. HOUSING RULES -->
+        <section id="housing" class="guide-section">
+          <span class="section-eyebrow">Real Estate</span>
+          <h2 class="section-title">Renting & Housing Etiquette</h2>
+          <p class="section-subtitle">Understanding upfront lease fees, guarantor systems, and apartment manners.</p>
+
+          <div class="luxury-card">
+            <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+            <div class="card-content">
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">Key Upfront Renting Fees</h3>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>• Key Money (Reikin):</strong> A non-refundable "gift" to the landlord, usually 1–2 months of rent. Becoming less common but still standard in traditional agencies.</p>
+              <p class="card-desc-muted" style="margin-bottom: 24px;"><strong>• Deposit (Shikikin):</strong> 1–2 months of rent. Refunded upon moving out, minus cleaning fees and repair costs for any damage (including tatami damage).</p>
+
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">Guarantor System</h3>
+              <p class="card-desc-muted" style="margin-bottom: 24px;">Traditional leases require a Japanese joint guarantor (Hoshonin). For foreign residents, specialized guarantor companies (like GTN or agency-approved ones) act as guarantors for a fee (typically 50-100% of a month's rent).</p>
+
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">Tatami Straw-Mat Rules</h3>
+              <p class="card-desc-muted">Traditional tatami rooms require strict manners. Never walk on tatami with shoes or slippers (bare feet or socks only). Do not place heavy, sharp furniture directly on the mats. If tatami is punctured or stained, you will pay full replacement costs upon moving out.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 18. SCHOOL EDUCATION -->
+        <section id="education" class="guide-section">
+          <span class="section-eyebrow">Education</span>
+          <h2 class="section-title">School Education for Families</h2>
+          <p class="section-subtitle">Navigating public vs international schools and local classroom customs.</p>
+
+          <div class="bento-grid-2">
+            
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">Public Schooling</h3>
+                <p class="card-desc-muted">Free public schooling is guaranteed for all children of foreign residents. Classes are taught 100% in Japanese. English support is rare, but young children typically adapt and become fluent within 1–2 years.</p>
+              </div>
+            </div>
+
+            <div class="luxury-card">
+              <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+              <div class="card-content">
+                <h3 class="card-title-lg">International Schools</h3>
+                <p class="card-desc-muted">Located in major cities (Tokyo, Yokohama, Osaka). Offer English/IB curriculums but are expensive, costing between ¥1.5 million to ¥3.0 million annually per child.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="callout-box" style="margin-top: 20px; border-color: rgba(0,0,0,0.1); background: none;">
+            <div class="callout-title" style="color: var(--text-main);">Classroom Cleaning Culture (O-Soji)</div>
+            <p class="callout-text">Japanese public schools do not hire janitors. Students themselves clean the classrooms, corridors, and even serve lunch to each other daily. This is a core part of building community spirit and personal responsibility from a young age.</p>
+          </div>
+        </section>
+
+        <!-- 19. PETS -->
+        <section id="pets" class="guide-section">
+          <span class="section-eyebrow">Animals</span>
+          <h2 class="section-title">Pet Importation Rules</h2>
+          <p class="section-subtitle">The strict biological clearance steps required to bring dogs or cats to Japan.</p>
+
+          <div class="luxury-card">
+            <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+            <div class="card-content">
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">Pet Import Clearance Timeline</h3>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>1. Microchip:</strong> Implant a ISO 11784/11785 compliant microchip first (before rabies vaccination).</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>2. Dual Rabies Shots:</strong> Give at least two inactivated rabies vaccinations spaced appropriately.</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>3. Rabies Titre Test:</strong> Draw blood for a rabies antibody test and send to a government-approved lab.</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;"><strong>4. 180-Day Wait:</strong> A mandatory 180-day quarantine wait begins from the blood draw date. The pet can stay in the origin country during this time.</p>
+              <p class="card-desc-muted" style="margin-bottom: 16px;"><strong>5. Import Notification:</strong> File notification of import to Japan Animal Quarantine Service (AQS) at least 40 days before departure.</p>
+              <p style="font-size: 0.85rem; color: var(--sun-red); font-weight: 700;">⚠️ Critical Note: Start this process at least 1 year in advance. Failing any step results in 180-day airport detention at your expense.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 20. DRIVING -->
+        <section id="driving" class="guide-section">
+          <span class="section-eyebrow">Transit</span>
+          <h2 class="section-title">Driving & License Conversion</h2>
+          <p class="section-subtitle">Converting foreign licenses to a Japanese driver's license.</p>
+
+          <div class="luxury-card">
+            <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+            <div class="card-content">
+              <h3 class="card-title-lg" style="margin-bottom: 12px;">Foreign License Conversion (Gaimen Kirikae)</h3>
+              <p class="card-desc-muted" style="margin-bottom: 8px;">If you hold a valid Indian driver's license, you can convert it at a prefecture driving center. The conversion requires:</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;">• Proof of residing in India for at least 90 days after license issuance.</p>
+              <p class="card-desc-muted" style="margin-bottom: 8px;">• Official translation of the license from Japan Automobile Federation (JAF).</p>
+              <p class="card-desc-muted" style="margin-bottom: 16px;">• Passing a brief written exam and a practical driving test at the center.</p>
+              <p style="font-size: 0.85rem; color: var(--sun-red); font-weight: 700;">⚠️ Test Tip: The practical road test has a low first-time pass rate for Indians due to strict lane-checking rules. Study the course map and practice turning angles beforehand.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 21. FINAL MESSAGE -->
+        <section id="final" class="guide-section">
+          <span class="section-eyebrow">Perspective</span>
+          <h2 class="section-title">The One Thing to Know</h2>
+          <p class="section-subtitle">Closing statement on integrating successfully in Japan.</p>
+
+          <div class="luxury-card" style="text-align: center; padding: 48px 36px;">
+            <div class="corner-border corner-tl"></div><div class="corner-border corner-tr"></div><div class="corner-border corner-bl"></div><div class="corner-border corner-br"></div>
+            <div class="card-content">
+              <span class="card-icon" style="margin-bottom: 16px;">🇯🇵</span>
+              <p class="card-desc-muted" style="font-size: 1.1rem; line-height: 1.7; max-width: 650px; margin: 0 auto 28px; color: var(--text-main); font-weight: 500;">
+                Japan rewards those who commit to it fully. The more Japanese you speak, the more you respect local community guidelines, and the more you seek to integrate — the smoother your visa renewals go, the better your job opportunities get, and the faster you become accepted in the community.
+              </p>
+              <a href="Roadmap.html" class="nav-link" style="display: inline-block; background: var(--text-main); color: var(--bg-white); padding: 12px 30px; border-radius: 9999px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: transform 0.2s ease;">
+                Start Your Japan Journey
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 GuideToJapan. Designed for respectful travelers and prospective residents.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.guide-section');
+      const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+      // High-performance IntersectionObserver to spy scroll positions without triggering layout thrashing
+      const activeSections = new Map();
+      const observerOptions = {
+        root: null,
+        rootMargin: '-10% 0px -75% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          activeSections.set(entry.target.id, entry.isIntersecting);
+        });
+
+        // Find the first intersecting section, or fallback to 'hero' if none are in view
+        let currentSectionId = 'hero';
+        for (const section of sections) {
+          if (activeSections.get(section.id)) {
+            currentSectionId = section.id;
+            break;
+          }
+        }
+
+        sidebarLinks.forEach(link => {
+          const targetId = link.getAttribute('href').substring(1);
+          if (targetId === currentSectionId) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+
+    // Accordion Toggle function
+    window.toggleAccordion = function(button) {
+      const item = button.closest('.accordion-item');
+      
+      // Close all other accordion items
+      const parent = item.closest('.luxury-card');
+      parent.querySelectorAll('.accordion-item').forEach(el => {
+        if (el !== item) {
+          el.classList.remove('active');
+          el.querySelector('.accordion-content').style.maxHeight = '0px';
+        }
+      });
+
+      // Toggle current item
+      item.classList.toggle('active');
+      const content = item.querySelector('.accordion-content');
+      if (item.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.style.maxHeight = '0px';
+      }
+    }
+  </script>
+</body>
+</html>
